@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Badger's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="minecraft/css/style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/aff69f41e8.js"></script>
+</head>
+<body onload="changeNav()">
+<div id="header">
+    <div class="container">
+        <a href="index.html"><span>B<img src="minecraft/css/img/Badger.png" />dger</span></a>
+        <ul id="fixed-nav">
+            <li class="active"><a href="index.html" id="homelink">Home</a></li>
+            <li><a href="#mywork" id="myworklink">My work</a></li>
+            <li><a href="#aboutme" id="aboutmelink">About me</a></li>
+            <li><a href="#links" id="linkslink">Links</a></li>
+        </ul>
+    </div>
+</div>
+<div class="coloredBackground">
+    <div class="badgerPic"><img src="minecraft/css/img/Badger.png" />
+        <h2>"The only way to the top is getting through the crowd at the bottom"</h2>
+        <h3>Or you know, clicking the up arrow at the bottom of the page ¯\_(ツ)_/¯</h3>
+    </div>
+</div>
+<div class="container-section">
+    <div class="content">
+        <div id="mywork">
+            <h2>My programs <a onclick="hidePremium()" id="hidePremium"><i class="fa fa-usd"></i></a></h2>
+            <div class="hr"></div>
+            <div class="contain-row">
+                <div class="row">
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-archive"></i>
+                        <h3>Chest Rewards Animated</h3>
+                        <p>A plugin I made based off of the minecraft
+                            server Desteria and the server CosmicPvP. It gives rewards to players,
+                            but the way it does is animated within a chest.
+                            The plugin works very well and is well-worth the buy!
+                            It's a great donator option and it can boost your donation sales! You can sell these crates on your online store and make tons of money!</p>
+                    </div>
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-bank"></i>
+                        <h3>BankVault</h3>
+                        <p>It is a plugin designed to give donors an extra perk. They can get a vault at the bank!
+                            Admins can set certain ender-chests as a BankVault. The BankVault can contain 9 to 54 total vaults.
+                            Each vault can hold 9 to 54 different items. You can sell vaults on your buycraft!</p>
+                    </div>
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-angle-double-up"></i>
+                        <h3>RankLevelUp</h3>
+                        <p>This is a backend plugin for the popular donation plugin BuyCraft. What it does is it acts as a buycraft add-on.
+                            When they buy the rank, you have buycraft set up so that it runs the one command in which runs all the
+                            commands listed under the rank in the RankLevelUp configuration file.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-arrows"></i>
+                        <h3>BadgerProtection</h3>
+                        <p>This plugin is a continuation of the once awesome mcpvp-based spawn protection of jProtection.
+                            I have upgraded the plugin however also by making the selection of the spawn and such by cuboid and not a radius.
+                            Have you ever wanted a mcpvp-based spawn protection and everyone wants to charge you big $$$ for it!? Look no more!</p>
+                    </div>
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-users"></i>
+                        <h3>uChoose-Parties</h3>
+                        <p>Choose-Parties is a fully customizable Party based system plugin. All the messages in
+                            uChoose-Parties are configurable! All of the error messages are configurable also!
+                            All the configurable features are what sets this Party system based plugin afar from the others.</p>
+                    </div>
+                    <div class="span-block">
+                        <h3 class="premium"><i class="fa fa-usd"></i> Premium</h3>
+                        <i class="fa fa-male"></i>
+                        <h3>Kits1v1</h3>
+                        <p>Kits 1v1 is a unique 1v1 system created by myself.
+                            it was an old project of mine from an old kitpvp server that used to be around. SonicPvP was the name of this server.
+                            They had asked me to create a 1v1 plugin for them, so I did. A long time has passed now and the server has been down for quite some time.
+                            I have decided I will sell copies of it now.</p>
+                    </div>
+                </div>
+                <div class="row-free">
+                    <div class="span-block">
+                        <h3>FastfoodLikeMe</h3>
+                        <p>Fastfood used to be a plugin on bukkit. It was used by many and was very useful. It made food instantly heal player's hearts based on their heal values described in the configs. I have recreated this plugin, although it only contains some foods, I do plan to update it further to include all the editable items in minecraft.</p>
+                    </div>
+                    <div class="span-block">
+                        <h3>RankTrials</h3>
+                        <p>RankTrials was a plugin that was made for this request. It was originally going to be called StaffTrials, however it now has many uses and can be used to count down kicking a player or banning a player by running the commands.</p>
+                    </div>
+                    <div class="span-block">
+                        <h3>ServerTrials</h3>
+                        <p>ServerTrials' main goal is to give players a trial for an amount of time on the server. It is meant for the "pay to play" sense.</p>
+                    </div>
+                </div>
+                <div class="row-free">
+                    <div class="span-block">
+                        <h3>rpgParties</h3>
+                        <p>This plugin adds parties to your server. When someone gains EXP the whole party gains the EXP! You all work together as a party to earn your EXP! You can also limit how many players maximum per team in the config!</p>
+                    </div>
+                    <div class="span-block">
+                        <h3>practiceKits</h3>
+                        <p>practiceKits adds SaveKit and LoadKit signs to your server! Save your kit and then load it up quickly to go out and continue the fights! The number of kit save and load signs allowed to be made are unlimited! You can make tons of different signs and names. It is unlimited!</p>
+                    </div>
+                    <div class="span-block">
+                        <h3>Anti-Teaming</h3>
+                        <p>It is a quite simple plugin. The code almost does all the work. When you get into a fight with a player it turns you two into an all out brawl. No-one can see you and you can only see each other. It will be a full 1 on 1 match. </p>
+                    </div>
+                </div>
+                <h1>And much much more cool stuff</h1>
+                <div class="button">
+                        <a href="#links"><div class="btn-contain">Learn more</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="aboutme">
+    <div class="container-section">
+        <div class="content">
+            <h2>About me</h2>
+            <div class="hr-no-pads"></div>
+            <h3>Minecrafter, Bukkiteer, Github Enthusiast, just your average day Badger</h3>
+        </div>
+        <p>My name is Jared, otherwise known as most on the internet, Badger. I am fluent in Java, PHP, JavaScript, CSS, along with HTML. I am currently going to school at St. Joseph's College.</p>
+        <div class="contain-imp-links"><h4>Find me on:</h4>
+            <a href="http://twitter.com/TheWolfBadger" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://github.com/TheWolfBadger" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="mailto: me@jaredscarito.com"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+<div id="links">
+    <div class="container-section">
+        <div class="content">
+            <h2>Buy a premium plugin</h2>
+            <div class="hr"></div>
+        </div>
+        <div class="button">
+            <a href="http://www.mc-market.org/resources/authors/638/"><div class="btn-contain">Click here</div></a>
+        </div>
+        <div class="content">
+            <h2>My free plugins</h2>
+            <div class="hr"></div>
+        </div>
+        <div class="button">
+            <a href="https://dev.bukkit.org/members/TheWolfBadger/projects"><div class="btn-contain">Click here</div></a>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            <i class="fa fa-copyright"></i> 2017 Badger <a onclick="window.scrollTo(0, 0);" style="float: right;" id="up-arrow"><i class="fa fa-arrow-up"></i></a>
+        </p>
+    </div>
+</div>
+</body>
+<script>
+    function hidePremium() {
+        var premiumPlugins = document.getElementsByClassName("premium");
+        for (var i=0; i<premiumPlugins.length; i++) {
+            var element = premiumPlugins[i];
+            element.parentElement.style.display = "none";
+            element.parentElement.parentElement.style.display = "none";
+        }
+        document.getElementById("hidePremium").setAttribute("onclick", "showPremium()");
+        document.getElementById("hidePremium").setAttribute("class", "hidden");
+    }
+    function showPremium() {
+        var premiumPlugins = document.getElementsByClassName("premium");
+        for (var i=0; i<premiumPlugins.length; i++) {
+            var element = premiumPlugins[i];
+            element.parentElement.style.display = "";
+            element.parentElement.parentElement.style.display = "";
+        }
+        document.getElementById("hidePremium").setAttribute("onclick", "hidePremium()");
+        document.getElementById("hidePremium").setAttribute("class", "");
+    }
+    function changeNav() {
+        var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        var home = 0;
+        var mywork = 837;
+        var aboutme = 2950;
+        var links = 3650;
+        /**/
+        mywork = position(document.getElementById("mywork"))+100;
+        console.log("MyWork Pos: " + mywork);
+        aboutme = position(document.getElementById("aboutme"))+1880;
+        console.log("AboutMe Pos: " + aboutme);
+        links = position(document.getElementById("links"))+2450;
+        console.log("Links Pos: " + links);
+        console.log("ScrollTop Pos: " + scrollTop);
+        /**/
+        /**/
+        if(document.getElementById("hidePremium").getAttribute("class") == "hidden") {
+            aboutme = position(document.getElementById("aboutme"))+500;
+            links = position(document.getElementById("links"))+1600;
+        }
+         /**/
+            if(scrollTop >= mywork && aboutme > scrollTop) {
+                //My work is active
+                document.getElementById("homelink").parentElement.setAttribute("class", "");
+                document.getElementById("myworklink").parentElement.setAttribute("class", "active");
+                document.getElementById("aboutmelink").parentElement.setAttribute("class", "");
+                document.getElementById("linkslink").parentElement.setAttribute("class", "");
+                return;
+            } else
+                if(scrollTop >= aboutme && links > scrollTop) {
+                    document.getElementById("homelink").parentElement.setAttribute("class", "");
+                    document.getElementById("myworklink").parentElement.setAttribute("class", "");
+                    document.getElementById("aboutmelink").parentElement.setAttribute("class", "active");
+                    document.getElementById("linkslink").parentElement.setAttribute("class", "");
+                    return;
+                } else
+                    if(scrollTop >= aboutme && links > scrollTop) {
+                        document.getElementById("homelink").parentElement.setAttribute("class", "");
+                        document.getElementById("myworklink").parentElement.setAttribute("class", "");
+                        document.getElementById("aboutmelink").parentElement.setAttribute("class", "active");
+                        document.getElementById("linkslink").parentElement.setAttribute("class", "");
+                        return;
+                } else
+                    if(scrollTop >= links) {
+                        //Links is active
+                        document.getElementById("homelink").parentElement.setAttribute("class", "");
+                        document.getElementById("myworklink").parentElement.setAttribute("class", "");
+                        document.getElementById("aboutmelink").parentElement.setAttribute("class", "");
+                        document.getElementById("linkslink").parentElement.setAttribute("class", "active");
+                        return;
+                    } else
+                    if(scrollTop >= home && mywork > scrollTop) {
+                        //Home is active
+                        document.getElementById("homelink").parentElement.setAttribute("class", "active");
+                        document.getElementById("myworklink").parentElement.setAttribute("class", "");
+                        document.getElementById("aboutmelink").parentElement.setAttribute("class", "");
+                        document.getElementById("linkslink").parentElement.setAttribute("class", "");
+                        return;
+                    }
+    }
+    function position(elem) {
+        var left = 0,
+                top = 0;
+
+        do {
+            left += elem.offsetLeft-elem.scrollLeft;
+            top += elem.offsetTop-elem.scrollTop;
+        } while ( elem = elem.offsetParent );
+        if(top <= 0) {
+            top += Math.abs(top) + Math.abs(top);
+        }
+        return top;
+    }
+    window.onscroll = function (e) {
+        changeNav();
+    }
+    function reloadedPage() {
+        if(window.performance.navigation.type == 1) {
+            //Reloaded
+            window.scrollBy(0, 0);
+        }
+    }
+</script>
+</html>

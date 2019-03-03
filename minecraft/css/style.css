@@ -1,0 +1,1540 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* For mobile devices: */
+/* ------------------- */
+#header {
+    background: rgba(255, 255, 255, .89);
+    border-bottom: 3px solid #D6D6D6;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+ul#fixed-nav {
+    float: right;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+ul#fixed-nav li {
+    display: inline-block;
+    margin-left: 18px;
+    padding-bottom: 6px;
+}
+ul#fixed-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ul#fixed-nav li.active {
+    border-bottom: 5px solid orange;
+}
+div.container {
+    width: 900px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.container-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.container span {
+    font-size: 32px;
+    float: left;
+    font-weight: 700;
+    height: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: orange;
+}
+div.container span img {
+    height: 26px;
+    width: 26px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 12px;
+}
+div.coloredBackground {
+    top: 0px;
+    height: 900px;
+    width: 100%;
+    background-color: orange;
+    border-bottom: 3px solid #D6D6D6;
+}
+div.badgerPic {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 16%;
+}
+div.badgerPic img {
+    width: 250px;
+    height: 250px;
+}
+div.badgerPic h2 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 4px;
+    padding-top: 45px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: white;
+}
+div.badgerPic h3 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4px;
+    padding-top: 40px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: white;
+}
+div.content {
+    padding-top: 40px;
+}
+div.content h2 {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+div.content h2 a {
+    padding-left: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    color: red;
+}
+div.content h2 a.hidden:hover {
+    color: red;
+}
+div.content h2 a.hidden {
+    color: #D6D6D6;
+}
+div.content h2 a:hover {
+    padding-left: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    cursor: pointer;
+    color: #D6D6D6;
+}
+div.hr {
+    background-color: orange;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3px;
+    margin-bottom: 60px;
+}
+div.contain-row {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+div.row {
+    width: 100%;
+    height: 540px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.row-free {
+    width: 100%;
+    height: 240px;
+    padding-bottom: 60px;
+}
+div.span-block {
+    width: 30%;
+    padding-left: 25px;
+    display: inline-block;
+    float: left;
+}
+div.span-block.hidden {
+    width: 350px;
+    padding-right: 30px;
+    display: inline-block;
+    float: left;
+}
+div.span-block h3.premium {
+    font-weight: bolder;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: red;
+}
+div.span-block i {
+    font-size: 120px;
+}
+div.span-block h3 i {
+    font-size: 32px;
+}
+div.span-block h3 {
+    color: orange;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+div.span-block p {
+    color: #df9000;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+div.contain-row h1 {
+    color: orange;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+div.button {
+    background-image: url("img/stone.jpg");
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.contain-row a {
+    text-decoration: none;
+}
+div.btn-contain {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+}
+a div.btn-contain:hover {
+    color: #e09000;
+}
+div#aboutme {
+    border-top: 3px solid #D6D6D6;
+    margin-top: 40px;
+    width: 100%;
+}
+div#aboutme h3 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+div.hr-no-pads {
+    background-color: orange;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3px;
+}
+div#aboutme h4 {
+    font-weight: 700;
+    font-size: 24px;
+    display: inline-block;
+    float: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+div#aboutme div.contain-imp-links {
+    padding-top: 60px;
+    width: 900px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div#aboutme i {
+    font-size: 160px;
+    padding-left: 30px;
+    float: left;
+    color: orange;
+}
+div#aboutme i:hover {
+    color: #e09000;
+}
+div.button a {
+    text-decoration: none;
+}
+div#links {
+    border-top: 3px solid #D6D6D6;
+    margin-top: 120px;
+}
+div#footer {
+    background-color: orange;
+    color: white;
+    margin-top: 60px;
+    font-size: 44px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+div#footer p {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+a#up-arrow {
+    background-color: orange;
+    border-bottom: 3px solid #db8b00;
+    border-right: 3px solid #db8b00;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+a#up-arrow:hover {
+    background-color: orange;
+    border-bottom: 3px solid orange;
+    border-right: 3px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (min-width: 667px) {
+    /* For iPhone 6+++ landscape mode: */
+    #header {
+        background: rgba(255, 255, 255, .89);
+        border-bottom: 3px solid #D6D6D6;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+    }
+    ul#fixed-nav {
+        float: right;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    ul#fixed-nav li {
+        display: inline-block;
+        margin-left: 18px;
+        padding-bottom: 6px;
+    }
+    ul#fixed-nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    ul#fixed-nav li.active {
+        border-bottom: 5px solid orange;
+    }
+    div.container {
+        width: 900px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container-section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container span {
+        font-size: 32px;
+        float: left;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: orange;
+    }
+    div.container span img {
+        height: 26px;
+        width: 26px;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 12px;
+    }
+    div.coloredBackground {
+        top: 0px;
+        height: 900px;
+        width: 100%;
+        background-color: orange;
+        border-bottom: 3px solid #D6D6D6;
+    }
+    div.badgerPic {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 16%;
+    }
+    div.badgerPic img {
+        width: 250px;
+        height: 250px;
+    }
+    div.badgerPic h2 {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 4px;
+        padding-top: 45px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.badgerPic h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        padding-top: 40px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.content {
+        padding-top: 40px;
+    }
+    div.content h2 {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+    div.content h2 a {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        color: red;
+    }
+    div.content h2 a.hidden:hover {
+        color: red;
+    }
+    div.content h2 a.hidden {
+        color: #D6D6D6;
+    }
+    div.content h2 a:hover {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        cursor: pointer;
+        color: #D6D6D6;
+    }
+    div.hr {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+        margin-bottom: 60px;
+    }
+    div.contain-row {
+        width: 980px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    div.row {
+        width: 100%;
+        height: 540px;
+        padding-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.row-free {
+        width: 100%;
+        height: 240px;
+        padding-bottom: 60px;
+    }
+    div.span-block {
+        width: 30%;
+        padding-left: 25px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block.hidden {
+        width: 350px;
+        padding-right: 30px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block h3.premium {
+        font-weight: bolder;
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: red;
+    }
+    div.span-block i {
+        font-size: 120px;
+    }
+    div.span-block h3 i {
+        font-size: 32px;
+    }
+    div.span-block h3 {
+        color: orange;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    div.span-block p {
+        color: #df9000;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    div.contain-row h1 {
+        color: orange;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.button {
+        background-image: url("img/stone.jpg");
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.contain-row a {
+        text-decoration: none;
+    }
+    div.btn-contain {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        letter-spacing: 3px;
+    }
+    a div.btn-contain:hover {
+        color: #e09000;
+    }
+    div#aboutme {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 40px;
+        width: 100%;
+    }
+    div#aboutme h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div.hr-no-pads {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+    }
+    div#aboutme h4 {
+        font-weight: 700;
+        font-size: 24px;
+        display: inline-block;
+        float: left;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div#aboutme div.contain-imp-links {
+        padding-top: 60px;
+        width: 900px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div#aboutme i {
+        font-size: 160px;
+        padding-left: 30px;
+        float: left;
+        color: orange;
+    }
+    div#aboutme i:hover {
+        color: #e09000;
+    }
+    div.button a {
+        text-decoration: none;
+    }
+    div#links {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 120px;
+    }
+    div#footer {
+        background-color: orange;
+        color: white;
+        margin-top: 60px;
+        font-size: 44px;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    div#footer p {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    a#up-arrow {
+        background-color: orange;
+        border-bottom: 3px solid #db8b00;
+        border-right: 3px solid #db8b00;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    a#up-arrow:hover {
+        background-color: orange;
+        border-bottom: 3px solid orange;
+        border-right: 3px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    #header {
+        background: rgba(255, 255, 255, .89);
+        border-bottom: 3px solid #D6D6D6;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+    }
+    ul#fixed-nav {
+        float: right;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    ul#fixed-nav li {
+        display: inline-block;
+        margin-left: 18px;
+        padding-bottom: 6px;
+    }
+    ul#fixed-nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    ul#fixed-nav li.active {
+        border-bottom: 5px solid orange;
+    }
+    div.container {
+        width: 900px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container-section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container span {
+        font-size: 32px;
+        float: left;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: orange;
+    }
+    div.container span img {
+        height: 26px;
+        width: 26px;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 12px;
+    }
+    div.coloredBackground {
+        top: 0px;
+        height: 900px;
+        width: 100%;
+        background-color: orange;
+        border-bottom: 3px solid #D6D6D6;
+    }
+    div.badgerPic {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 16%;
+    }
+    div.badgerPic img {
+        width: 250px;
+        height: 250px;
+    }
+    div.badgerPic h2 {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 4px;
+        padding-top: 45px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.badgerPic h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        padding-top: 40px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.content {
+        padding-top: 40px;
+    }
+    div.content h2 {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+    div.content h2 a {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        color: red;
+    }
+    div.content h2 a.hidden:hover {
+        color: red;
+    }
+    div.content h2 a.hidden {
+        color: #D6D6D6;
+    }
+    div.content h2 a:hover {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        cursor: pointer;
+        color: #D6D6D6;
+    }
+    div.hr {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+        margin-bottom: 60px;
+    }
+    div.contain-row {
+        width: 980px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    div.row {
+        width: 100%;
+        height: 540px;
+        padding-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.row-free {
+        width: 100%;
+        height: 240px;
+        padding-bottom: 60px;
+    }
+    div.span-block {
+        width: 30%;
+        padding-left: 25px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block.hidden {
+        width: 350px;
+        padding-right: 30px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block h3.premium {
+        font-weight: bolder;
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: red;
+    }
+    div.span-block i {
+        font-size: 120px;
+    }
+    div.span-block h3 i {
+        font-size: 32px;
+    }
+    div.span-block h3 {
+        color: orange;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    div.span-block p {
+        color: #df9000;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    div.contain-row h1 {
+        color: orange;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.button {
+        background-image: url("img/stone.jpg");
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.contain-row a {
+        text-decoration: none;
+    }
+    div.btn-contain {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        letter-spacing: 3px;
+    }
+    a div.btn-contain:hover {
+        color: #e09000;
+    }
+    div#aboutme {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 40px;
+        width: 100%;
+    }
+    div#aboutme h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div.hr-no-pads {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+    }
+    div#aboutme h4 {
+        font-weight: 700;
+        font-size: 24px;
+        display: inline-block;
+        float: left;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div#aboutme div.contain-imp-links {
+        padding-top: 60px;
+        width: 900px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div#aboutme i {
+        font-size: 160px;
+        padding-left: 30px;
+        float: left;
+        color: orange;
+    }
+    div#aboutme i:hover {
+        color: #e09000;
+    }
+    div.button a {
+        text-decoration: none;
+    }
+    div#links {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 120px;
+    }
+    div#footer {
+        background-color: orange;
+        color: white;
+        margin-top: 60px;
+        font-size: 44px;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    div#footer p {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    a#up-arrow {
+        background-color: orange;
+        border-bottom: 3px solid #db8b00;
+        border-right: 3px solid #db8b00;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    a#up-arrow:hover {
+        background-color: orange;
+        border-bottom: 3px solid orange;
+        border-right: 3px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    /* iPad Pros:  */
+    #header {
+        background: rgba(255, 255, 255, .89);
+        border-bottom: 3px solid #D6D6D6;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+    }
+    ul#fixed-nav {
+        float: right;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    ul#fixed-nav li {
+        display: inline-block;
+        margin-left: 18px;
+        padding-bottom: 6px;
+    }
+    ul#fixed-nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    ul#fixed-nav li.active {
+        border-bottom: 5px solid orange;
+    }
+    div.container {
+        width: 994px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container-section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container span {
+        font-size: 32px;
+        float: left;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: orange;
+    }
+    div.container span img {
+        height: 26px;
+        width: 26px;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 12px;
+    }
+    div.coloredBackground {
+        top: 0px;
+        height: 900px;
+        width: 100%;
+        background-color: orange;
+        border-bottom: 3px solid #D6D6D6;
+    }
+    div.badgerPic {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 16%;
+    }
+    div.badgerPic img {
+        width: 250px;
+        height: 250px;
+    }
+    div.badgerPic h2 {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 4px;
+        padding-top: 45px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.badgerPic h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        padding-top: 40px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.content {
+        padding-top: 40px;
+    }
+    div.content h2 {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+    div.content h2 a {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        color: red;
+    }
+    div.content h2 a.hidden:hover {
+        color: red;
+    }
+    div.content h2 a.hidden {
+        color: #D6D6D6;
+    }
+    div.content h2 a:hover {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        cursor: pointer;
+        color: #D6D6D6;
+    }
+    div.hr {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+        margin-bottom: 60px;
+    }
+    div.contain-row {
+        width: 980px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    div.row {
+        width: 100%;
+        height: 540px;
+        padding-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.row-free {
+        width: 100%;
+        height: 240px;
+        padding-bottom: 60px;
+    }
+    div.span-block {
+        width: 30%;
+        padding-left: 25px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block.hidden {
+        width: 350px;
+        padding-right: 30px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block h3.premium {
+        font-weight: bolder;
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: red;
+    }
+    div.span-block i {
+        font-size: 120px;
+    }
+    div.span-block h3 i {
+        font-size: 32px;
+    }
+    div.span-block h3 {
+        color: orange;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    div.span-block p {
+        color: #df9000;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    div.contain-row h1 {
+        color: orange;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.button {
+        background-image: url("img/stone.jpg");
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.contain-row a {
+        text-decoration: none;
+    }
+    div.btn-contain {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        letter-spacing: 3px;
+    }
+    a div.btn-contain:hover {
+        color: #e09000;
+    }
+    div#aboutme {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 40px;
+        width: 100%;
+    }
+    div#aboutme h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div.hr-no-pads {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+    }
+    div#aboutme h4 {
+        font-weight: 700;
+        font-size: 24px;
+        display: inline-block;
+        float: left;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div#aboutme div.contain-imp-links {
+        padding-top: 60px;
+        width: 900px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div#aboutme i {
+        font-size: 160px;
+        padding-left: 30px;
+        float: left;
+        color: orange;
+    }
+    div#aboutme i:hover {
+        color: #e09000;
+    }
+    div.button a {
+        text-decoration: none;
+    }
+    div#links {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 120px;
+    }
+    div#footer {
+        background-color: orange;
+        color: white;
+        margin-top: 60px;
+        font-size: 44px;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    div#footer p {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    a#up-arrow {
+        background-color: orange;
+        border-bottom: 3px solid #db8b00;
+        border-right: 3px solid #db8b00;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    a#up-arrow:hover {
+        background-color: orange;
+        border-bottom: 3px solid orange;
+        border-right: 3px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    /* Desktop screens and iPad pro landscape: */
+    #header {
+        background: rgba(255, 255, 255, .89);
+        border-bottom: 3px solid #D6D6D6;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+    }
+    ul#fixed-nav {
+        float: right;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    ul#fixed-nav li {
+        display: inline-block;
+        margin-left: 18px;
+        padding-bottom: 6px;
+    }
+    ul#fixed-nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    ul#fixed-nav li.active {
+        border-bottom: 5px solid orange;
+    }
+    div.container {
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container-section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.container span {
+        font-size: 32px;
+        float: left;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: orange;
+    }
+    div.container span img {
+        height: 26px;
+        width: 26px;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 12px;
+    }
+    div.coloredBackground {
+        top: 0px;
+        height: 900px;
+        width: 100%;
+        background-color: orange;
+        border-bottom: 3px solid #D6D6D6;
+    }
+    div.badgerPic {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 16%;
+    }
+    div.badgerPic img {
+        width: 250px;
+        height: 250px;
+    }
+    div.badgerPic h2 {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 4px;
+        padding-top: 45px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.badgerPic h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        padding-top: 40px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: white;
+    }
+    div.content {
+        padding-top: 40px;
+    }
+    div.content h2 {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+    div.content h2 a {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        color: red;
+    }
+    div.content h2 a.hidden:hover {
+        color: red;
+    }
+    div.content h2 a.hidden {
+        color: #D6D6D6;
+    }
+    div.content h2 a:hover {
+        padding-left: 20px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        cursor: pointer;
+        color: #D6D6D6;
+    }
+    div.hr {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+        margin-bottom: 60px;
+    }
+    div.contain-row {
+        width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    div.row {
+        width: 100%;
+        height: 440px;
+        padding-bottom: 60px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    div.row-free {
+        width: 100%;
+        height: 240px;
+        padding-bottom: 60px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    div.span-block {
+        width: 350px;
+        padding-left: 30px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block.hidden {
+        width: 350px;
+        padding-right: 30px;
+        display: inline-block;
+        float: left;
+    }
+    div.span-block h3.premium {
+        font-weight: bolder;
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: red;
+    }
+    div.span-block i {
+        font-size: 120px;
+    }
+    div.span-block h3 i {
+        font-size: 32px;
+    }
+    div.span-block h3 {
+        color: orange;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    div.span-block p {
+        color: #df9000;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    div.contain-row h1 {
+        color: orange;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.button {
+        background-image: url("img/stone.jpg");
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.contain-row a {
+        text-decoration: none;
+    }
+    div.btn-contain {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        letter-spacing: 3px;
+    }
+    a div.btn-contain:hover {
+        color: #e09000;
+    }
+    div#aboutme {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 40px;
+        width: 100%;
+    }
+    div#aboutme h3 {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div.hr-no-pads {
+        background-color: orange;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 3px;
+    }
+    div#aboutme h4 {
+        font-weight: 700;
+        font-size: 24px;
+        display: inline-block;
+        float: left;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+    div#aboutme div.contain-imp-links {
+        padding-top: 60px;
+        width: 900px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div#aboutme i {
+        font-size: 160px;
+        padding-left: 30px;
+        float: left;
+        color: orange;
+    }
+    div#aboutme i:hover {
+        color: #e09000;
+    }
+    div.button a {
+        text-decoration: none;
+    }
+    div#links {
+        border-top: 3px solid #D6D6D6;
+        margin-top: 120px;
+    }
+    div#footer {
+        background-color: orange;
+        color: white;
+        margin-top: 60px;
+        font-size: 44px;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    div#footer p {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    a#up-arrow {
+        background-color: orange;
+        border-bottom: 3px solid #db8b00;
+        border-right: 3px solid #db8b00;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    a#up-arrow:hover {
+        background-color: orange;
+        border-bottom: 3px solid orange;
+        border-right: 3px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    /* Desktop screens 1500px - 1740px : */
+}
+@media only screen and (min-width: 1740px) {
+    /* Desktop screens: */
+}
